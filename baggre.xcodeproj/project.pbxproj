@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCD37FE01A1100050085DB9E /* creator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD37FDE1A1100050085DB9E /* creator.cpp */; };
 		FCD6BFBD1A0CFBD2008064D3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD6BFBC1A0CFBD2008064D3 /* main.cpp */; };
-		FCD6BFC51A0D1075008064D3 /* Puller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD6BFC41A0D1075008064D3 /* Puller.cpp */; };
+		FCD6BFC51A0D1075008064D3 /* puller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD6BFC41A0D1075008064D3 /* puller.cpp */; };
+		FCD6C0071A0D1BAE008064D3 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD6C0061A0D1BAE008064D3 /* libcurl.dylib */; };
+		FCFFEFF61A10FD69001A3C38 /* libpodofo.0.9.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFFEFF51A10FD69001A3C38 /* libpodofo.0.9.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +27,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FCD37FDE1A1100050085DB9E /* creator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = creator.cpp; sourceTree = "<group>"; };
+		FCD37FDF1A1100050085DB9E /* creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = creator.h; sourceTree = "<group>"; };
 		FCD6BFB91A0CFBD2008064D3 /* baggre */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = baggre; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD6BFBC1A0CFBD2008064D3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		FCD6BFC31A0D1061008064D3 /* Puller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Puller.h; sourceTree = "<group>"; };
-		FCD6BFC41A0D1075008064D3 /* Puller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Puller.cpp; sourceTree = "<group>"; };
+		FCD6BFC31A0D1061008064D3 /* puller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = puller.h; sourceTree = "<group>"; };
+		FCD6BFC41A0D1075008064D3 /* puller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = puller.cpp; sourceTree = "<group>"; };
+		FCD6C0061A0D1BAE008064D3 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		FCFFEFF51A10FD69001A3C38 /* libpodofo.0.9.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpodofo.0.9.3.dylib; path = ../../../../../opt/local/lib/libpodofo.0.9.3.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD6C0071A0D1BAE008064D3 /* libcurl.dylib in Frameworks */,
+				FCFFEFF61A10FD69001A3C38 /* libpodofo.0.9.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,8 @@
 		FCD6BFB01A0CFBD2008064D3 = {
 			isa = PBXGroup;
 			children = (
+				FCFFEFF51A10FD69001A3C38 /* libpodofo.0.9.3.dylib */,
+				FCD6C0061A0D1BAE008064D3 /* libcurl.dylib */,
 				FCD6BFBB1A0CFBD2008064D3 /* baggre */,
 				FCD6BFBA1A0CFBD2008064D3 /* Products */,
 			);
@@ -61,8 +72,10 @@
 			isa = PBXGroup;
 			children = (
 				FCD6BFBC1A0CFBD2008064D3 /* main.cpp */,
-				FCD6BFC31A0D1061008064D3 /* Puller.h */,
-				FCD6BFC41A0D1075008064D3 /* Puller.cpp */,
+				FCD6BFC31A0D1061008064D3 /* puller.h */,
+				FCD6BFC41A0D1075008064D3 /* puller.cpp */,
+				FCD37FDE1A1100050085DB9E /* creator.cpp */,
+				FCD37FDF1A1100050085DB9E /* creator.h */,
 			);
 			path = baggre;
 			sourceTree = "<group>";
@@ -124,7 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD6BFBD1A0CFBD2008064D3 /* main.cpp in Sources */,
-				FCD6BFC51A0D1075008064D3 /* Puller.cpp in Sources */,
+				FCD37FE01A1100050085DB9E /* creator.cpp in Sources */,
+				FCD6BFC51A0D1075008064D3 /* puller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +222,10 @@
 		FCD6BFC11A0CFBD2008064D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -215,6 +233,10 @@
 		FCD6BFC21A0CFBD2008064D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -238,6 +260,7 @@
 				FCD6BFC21A0CFBD2008064D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

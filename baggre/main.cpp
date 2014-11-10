@@ -7,14 +7,17 @@
 //
 
 #include <iostream>
-#include <curl/curl.h>
+#include "puller.h"
 
 int main(int argc, const char * argv[])
 {
     std::string url;
     std::cin >> url;
 
-
-    std::cout << "Hello, World! " << url;
+    
+    Puller puller;
+    
+    puller.getPage(url);
+    std::cout << "Hello, World! " << url << "\n";
     return 0;
 }
