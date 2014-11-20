@@ -1,5 +1,5 @@
 //
-//  Puller.cpp
+//  puller.cpp
 //  baggre
 //
 //  Created by Simone Salvo on 07/11/14.
@@ -69,5 +69,3 @@ bool Puller::getPage(std::vector<std::string> url)
     }
     return true;
 }
-
-
