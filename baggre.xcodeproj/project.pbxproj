@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC7B17981A1DF24F0049EA4A /* puller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7B17971A1DF24F0049EA4A /* puller.cpp */; };
+		FC7B179C1A1DF4D50049EA4A /* puller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7B179B1A1DF4D50049EA4A /* puller.cpp */; };
 		FCA9E0A31A1367B800BA1008 /* xmlManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E0A11A1367B800BA1008 /* xmlManager.cpp */; };
 		FCA9E0A51A1369F600BA1008 /* libtinyxml.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA9E0A41A1369F600BA1008 /* libtinyxml.dylib */; };
 		FCD37FE01A1100050085DB9E /* creator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD37FDE1A1100050085DB9E /* creator.cpp */; };
@@ -30,7 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FC7B17971A1DF24F0049EA4A /* puller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = puller.cpp; sourceTree = "<group>"; };
+		FC7B179B1A1DF4D50049EA4A /* puller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = puller.cpp; sourceTree = "<group>"; };
 		FCA9E0A11A1367B800BA1008 /* xmlManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xmlManager.cpp; sourceTree = "<group>"; };
 		FCA9E0A21A1367B800BA1008 /* xmlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlManager.h; sourceTree = "<group>"; };
 		FCA9E0A41A1369F600BA1008 /* libtinyxml.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtinyxml.dylib; path = ../../../../../opt/local/lib/libtinyxml.dylib; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		FCD6BFBB1A0CFBD2008064D3 /* baggre */ = {
 			isa = PBXGroup;
 			children = (
-				FC7B17971A1DF24F0049EA4A /* puller.cpp */,
+				FC7B179B1A1DF4D50049EA4A /* puller.cpp */,
 				FCD6BFBC1A0CFBD2008064D3 /* main.cpp */,
 				FCD6BFC31A0D1061008064D3 /* puller.h */,
 				FCD37FDE1A1100050085DB9E /* creator.cpp */,
@@ -153,7 +153,7 @@
 				FCD6BFBD1A0CFBD2008064D3 /* main.cpp in Sources */,
 				FCD37FE01A1100050085DB9E /* creator.cpp in Sources */,
 				FCF25FEF1A14A1D500F1D6CC /* cloudManager.cpp in Sources */,
-				FC7B17981A1DF24F0049EA4A /* puller.cpp in Sources */,
+				FC7B179C1A1DF4D50049EA4A /* puller.cpp in Sources */,
 				FCA9E0A31A1367B800BA1008 /* xmlManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
