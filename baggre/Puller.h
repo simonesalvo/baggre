@@ -30,9 +30,9 @@ private:
     
     // Function
 public:
-     Puller();
+    Puller();
     ~Puller();
-
+    
     bool getPage(std::vector<std::string> url);
     std::string getPath();
     std::string getFilename();
