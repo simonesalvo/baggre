@@ -8,16 +8,27 @@
 
 #include <iostream>
 #include "puller.h"
+#include "creator.h"
 
 int main(int argc, const char * argv[])
 {
+    
     std::string url;
-    std::cin >> url;
+    std::vector<std::string> urlVector;
+    
+    do
+    {
+        std::cin >> url;
+        if (url.compare("q")!=0)
+            urlVector.push_back(url);
+    }
+    while(url.compare("q")!=0);
 
-    
     Puller puller;
+    puller.getPage(urlVector);
     
-    puller.getPage(url);
-    std::cout << "Hello, World! " << url << "\n";
+    Creator creator(puller.getPath(),puller.getFilename());
+    creator.createPdf();
+    
     return 0;
 }
