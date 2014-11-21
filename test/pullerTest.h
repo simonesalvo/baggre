@@ -9,6 +9,11 @@
 #ifndef __baggre__pullerTest__
 #define __baggre__pullerTest__
 
-#include <stdio.h>
+#include "puller.h"
 
+class pullerTest
+{
+    void init(void);
+
+};
 #endif /* defined(__baggre__pullerTest__) */

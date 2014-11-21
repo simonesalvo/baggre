@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC542B4F1A1E725F004E87FC /* bookTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC542B4D1A1E725F004E87FC /* bookTest.cpp */; };
+		FC6E0DD21A1E05FA008B09DC /* bookManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC6E0DD01A1E05FA008B09DC /* bookManager.cpp */; };
 		FC7B179C1A1DF4D50049EA4A /* puller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7B179B1A1DF4D50049EA4A /* puller.cpp */; };
 		FCA9E0A31A1367B800BA1008 /* xmlManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E0A11A1367B800BA1008 /* xmlManager.cpp */; };
 		FCA9E0A51A1369F600BA1008 /* libtinyxml.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA9E0A41A1369F600BA1008 /* libtinyxml.dylib */; };
+		FCCA6F011A1E007B00D4F2FD /* xmlTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA6EFF1A1E007B00D4F2FD /* xmlTest.cpp */; };
+		FCCA6F041A1E00AC00D4F2FD /* pullerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA6F021A1E00AC00D4F2FD /* pullerTest.cpp */; };
+		FCCA6F071A1E00B800D4F2FD /* creatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA6F051A1E00B800D4F2FD /* creatorTest.cpp */; };
 		FCD37FE01A1100050085DB9E /* creator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD37FDE1A1100050085DB9E /* creator.cpp */; };
 		FCD6BFBD1A0CFBD2008064D3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD6BFBC1A0CFBD2008064D3 /* main.cpp */; };
 		FCD6C0071A0D1BAE008064D3 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD6C0061A0D1BAE008064D3 /* libcurl.dylib */; };
@@ -30,14 +35,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC542B4D1A1E725F004E87FC /* bookTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bookTest.cpp; sourceTree = "<group>"; };
+		FC542B4E1A1E725F004E87FC /* bookTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bookTest.h; sourceTree = "<group>"; };
+		FC6E0DD01A1E05FA008B09DC /* bookManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bookManager.cpp; sourceTree = "<group>"; };
+		FC6E0DD11A1E05FA008B09DC /* bookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bookManager.h; sourceTree = "<group>"; };
 		FC7B179B1A1DF4D50049EA4A /* puller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = puller.cpp; sourceTree = "<group>"; };
 		FCA9E0A11A1367B800BA1008 /* xmlManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xmlManager.cpp; sourceTree = "<group>"; };
 		FCA9E0A21A1367B800BA1008 /* xmlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlManager.h; sourceTree = "<group>"; };
 		FCA9E0A41A1369F600BA1008 /* libtinyxml.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtinyxml.dylib; path = ../../../../../opt/local/lib/libtinyxml.dylib; sourceTree = "<group>"; };
+		FCCA6EFF1A1E007B00D4F2FD /* xmlTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xmlTest.cpp; sourceTree = "<group>"; };
+		FCCA6F001A1E007B00D4F2FD /* xmlTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlTest.h; sourceTree = "<group>"; };
+		FCCA6F021A1E00AC00D4F2FD /* pullerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pullerTest.cpp; sourceTree = "<group>"; };
+		FCCA6F031A1E00AC00D4F2FD /* pullerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pullerTest.h; sourceTree = "<group>"; };
+		FCCA6F051A1E00B800D4F2FD /* creatorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = creatorTest.cpp; sourceTree = "<group>"; };
+		FCCA6F061A1E00B800D4F2FD /* creatorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = creatorTest.h; sourceTree = "<group>"; };
 		FCD37FDE1A1100050085DB9E /* creator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = creator.cpp; sourceTree = "<group>"; };
 		FCD37FDF1A1100050085DB9E /* creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = creator.h; sourceTree = "<group>"; };
 		FCD6BFB91A0CFBD2008064D3 /* baggre */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = baggre; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCD6BFBC1A0CFBD2008064D3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FCD6BFBC1A0CFBD2008064D3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../baggre/main.cpp; sourceTree = "<group>"; };
 		FCD6BFC31A0D1061008064D3 /* puller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = puller.h; sourceTree = "<group>"; };
 		FCD6C0061A0D1BAE008064D3 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
 		FCF25FED1A14A1D500F1D6CC /* cloudManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cloudManager.cpp; sourceTree = "<group>"; };
@@ -59,12 +74,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCCA6EFE1A1E003100D4F2FD /* test */ = {
+			isa = PBXGroup;
+			children = (
+				FCD6BFBC1A0CFBD2008064D3 /* main.cpp */,
+				FCCA6EFF1A1E007B00D4F2FD /* xmlTest.cpp */,
+				FCCA6F001A1E007B00D4F2FD /* xmlTest.h */,
+				FCCA6F021A1E00AC00D4F2FD /* pullerTest.cpp */,
+				FCCA6F031A1E00AC00D4F2FD /* pullerTest.h */,
+				FCCA6F051A1E00B800D4F2FD /* creatorTest.cpp */,
+				FCCA6F061A1E00B800D4F2FD /* creatorTest.h */,
+				FC542B4D1A1E725F004E87FC /* bookTest.cpp */,
+				FC542B4E1A1E725F004E87FC /* bookTest.h */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		FCD6BFB01A0CFBD2008064D3 = {
 			isa = PBXGroup;
 			children = (
 				FCA9E0A41A1369F600BA1008 /* libtinyxml.dylib */,
 				FCFFEFF51A10FD69001A3C38 /* libpodofo.0.9.3.dylib */,
 				FCD6C0061A0D1BAE008064D3 /* libcurl.dylib */,
+				FCCA6EFE1A1E003100D4F2FD /* test */,
 				FCD6BFBB1A0CFBD2008064D3 /* baggre */,
 				FCD6BFBA1A0CFBD2008064D3 /* Products */,
 			);
@@ -82,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				FC7B179B1A1DF4D50049EA4A /* puller.cpp */,
-				FCD6BFBC1A0CFBD2008064D3 /* main.cpp */,
 				FCD6BFC31A0D1061008064D3 /* puller.h */,
 				FCD37FDE1A1100050085DB9E /* creator.cpp */,
 				FCD37FDF1A1100050085DB9E /* creator.h */,
@@ -90,6 +121,8 @@
 				FCA9E0A21A1367B800BA1008 /* xmlManager.h */,
 				FCF25FED1A14A1D500F1D6CC /* cloudManager.cpp */,
 				FCF25FEE1A14A1D500F1D6CC /* cloudManager.h */,
+				FC6E0DD01A1E05FA008B09DC /* bookManager.cpp */,
+				FC6E0DD11A1E05FA008B09DC /* bookManager.h */,
 			);
 			path = baggre;
 			sourceTree = "<group>";
@@ -150,9 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC542B4F1A1E725F004E87FC /* bookTest.cpp in Sources */,
+				FCCA6F071A1E00B800D4F2FD /* creatorTest.cpp in Sources */,
 				FCD6BFBD1A0CFBD2008064D3 /* main.cpp in Sources */,
 				FCD37FE01A1100050085DB9E /* creator.cpp in Sources */,
+				FCCA6F041A1E00AC00D4F2FD /* pullerTest.cpp in Sources */,
 				FCF25FEF1A14A1D500F1D6CC /* cloudManager.cpp in Sources */,
+				FCCA6F011A1E007B00D4F2FD /* xmlTest.cpp in Sources */,
+				FC6E0DD21A1E05FA008B09DC /* bookManager.cpp in Sources */,
 				FC7B179C1A1DF4D50049EA4A /* puller.cpp in Sources */,
 				FCA9E0A31A1367B800BA1008 /* xmlManager.cpp in Sources */,
 			);

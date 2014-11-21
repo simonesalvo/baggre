@@ -10,5 +10,9 @@
 #define __baggre__creatorTest__
 
 #include <stdio.h>
+class creatorTest
+{
+    void init(void);
 
+};
 #endif /* defined(__baggre__creatorTest__) */

@@ -10,5 +10,8 @@
 #define __baggre__xmlTest__
 
 #include <stdio.h>
-
+class xmlTest
+{
+    void init(void);
+};
 #endif /* defined(__baggre__xmlTest__) */

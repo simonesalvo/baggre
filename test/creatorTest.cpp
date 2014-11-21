@@ -7,3 +7,8 @@
 //
 
 #include "creatorTest.h"
+
+void creatorTest::init(void)
+{
+    
+}

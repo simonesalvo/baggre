@@ -8,27 +8,53 @@
 
 #include "xmlManager.h"
 
+/**
+ *  Constructor
+*/
 xmlManager::xmlManager()
 : xmlFileName("sample.xml"),
 saved(false),
+loaded(false),
 path("")
 {
-    // Make xml
     vers = new TiXmlDeclaration( "1.0", "", "" );
     doc.LinkEndChild( vers );
 }
 
-std::string xmlManager::getXmlFilename()
+/**
+ *  Constructor
+ *
+ *  @param path xml file's path
+ */
+xmlManager::xmlManager(std::string path)
 {
-    return xmlFileName;
+    vers = new TiXmlDeclaration( "1.0", "", "" );
+    doc.LinkEndChild( vers );
+    xmlFileName = path;
 }
 
-void xmlManager::setFilename(std::string n)
+/**
+ *  Destructor
+ */
+xmlManager::~xmlManager()
+{
+    
+}
+
+/**
+ *  Set xml file name
+ *
+ *  @param n file name
+ *
+ *  @return return true
+ */
+bool xmlManager::setFilename(const std::string & n)
 {
     xmlFileName = n;
+    return true;
 }
 
-bool xmlManager::addChild(std::string & parent, std::string & newChild)
+bool xmlManager::addChild( const std::string & parent, std::string & newChild)
 {
     TiXmlElement * node = getNode(parent);
     
@@ -39,7 +65,7 @@ bool xmlManager::addChild(std::string & parent, std::string & newChild)
     
     node->LinkEndChild( childLeaves );
     
-    saveXml();
+    save();
     return true;
 }
 
@@ -48,9 +74,9 @@ bool xmlManager::isSaved()
     return saved;
 }
 
-TiXmlElement * xmlManager::getNode(std::string & node)
+TiXmlElement * xmlManager::getNode(const std::string & node)
 {
-    TiXmlElement * root = doc.RootElement(); //Tree root
+    TiXmlElement * root = doc.RootElement();
     bool found = false;
     
     while (root && !found)
@@ -79,7 +105,7 @@ bool xmlManager::addNode(std::string & parent, std::string & newNode)
     TiXmlElement *child = new TiXmlElement(newNode);
     node->LinkEndChild( child );
     
-    saveXml();
+    save();
     return true;
 }
 
@@ -118,16 +144,17 @@ std::string xmlManager::getPath()
     return path;
 }
 
-std::string xmlManager::getFilename()
+std::string & xmlManager::getFilename(void)
 {
     return xmlFileName;
 }
-bool xmlManager::loadXml(std::string)
+
+bool xmlManager::load(std::string)
 {
-    return true;
+    return doc.LoadFile(xmlFileName);
 }
 
-bool xmlManager::saveXml()
+bool xmlManager::save()
 {
     doc.SaveFile( xmlFileName);
     saved = true;

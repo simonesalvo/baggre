@@ -8,18 +8,28 @@
 
 #include "puller.h"
 
-
+/**
+ *  Constructor
+ */
 Puller::Puller()
 {
     path = "/Users/simone/Desktop/";
     filename = "file.txt";
 }
 
+/**
+ *  Deconstructor
+ */
 Puller::~Puller()
 {
     
 }
 
+/**
+ *  Get file name. File is the container of GET operations
+ *
+ *  @return file name with extension
+ */
 std::string Puller::getFilename()
 {
     return filename;
@@ -36,11 +46,23 @@ void Puller::setPath(std::string p)
     path = p;
 }
 
+/**
+ *  Get path of the file.
+ *
+ *  @return file's path
+ */
 std::string Puller::getPath()
 {
     return path;
 }
 
+/**
+ *  Get the pages
+ *
+ *  @param url of pages to be downloaded
+ *
+ *  @return true if all the page are downloaded correctly, false otherwise
+ */
 bool Puller::getPage(std::vector<std::string> url)
 {
     curl_global_init(CURL_GLOBAL_ALL);

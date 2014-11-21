@@ -53,13 +53,15 @@ bool Creator::createPdf()
         
         std::string tLine;
         std::ifstream inFile;
-        inFile.open (path+inFileName, std::ios::in);
+
         PoDoFo::PdfRect::PdfRect rect = document.GetPage(0)->GetMediaBox();
+        inFile.open (path+inFileName, std::ios::in);
 
         while(std::getline(inFile,tLine))
         {
             painter.DrawMultiLineText(rect, tLine.c_str());
         }
+        inFile.close();
 
         painter.FinishPage();
         
@@ -71,7 +73,6 @@ bool Creator::createPdf()
         // document.GetInfo()->SetKeywords( PdfString("Test;PDF;Hello World;"));
         
         document.Close();
-        inFile.close();
         
     }
     catch ( const PoDoFo::PdfError & e )
